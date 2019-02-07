@@ -19,6 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::get('/mock', function (Request $request) {
   return array(
-    'msg' => 'Hello Laracon!'
+    'msg' => 'Hello Aladdin!'
   );
 });

@@ -6,18 +6,20 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  data () {
+  name: "HelloWorld",
+  data() {
     return {
-      msg: ''
-    }
+      msg: ""
+    };
   },
-  created () {
-    fetch('/api/mock').then(res => res.json()).then(({ msg }) => {
-      this.msg = msg
-    })
+  created() {
+    fetch("/api/mock")
+      .then(res => res.json())
+      .then(({ msg }) => {
+        this.msg = msg;
+      });
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
